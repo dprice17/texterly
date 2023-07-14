@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Serif Gujarati", serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  max-height: 885px;
+}
+
+h1 {
+  font-size: 4.375rem;
+  margin-bottom: 0;
+}
+
+h3,
+.AI-sub-text {
+  margin-top: 0;
+  color: #808080;
+}
+
+.AI-sub-text {
+  font-size: 0.8rem;
+  margin-bottom: 2em;
+}
+
+textarea {
+  width: 1135px;
+  height: 404px;
+  padding: 1.5em;
+  font-size: 1.875rem;
+  letter-spacing: 0.1em;
+  background-color: #ffe6e4;
+  resize: none;
+  border-radius: 15px;
+  border: none;
+  font-family: inherit;
+}
+
+.character-word-count-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.character-word-count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 114px;
+  font-size: 1.375rem;
+  background-color: #ffc997;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 15px;
+  border: none;
+}
+
+.character-word-count-first-row {
+  width: 320px;
+}
+
+.character-word-count-second-row {
+  width: 275px;
+}
+
+.top-line-text {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.midline-text {
+  display: block;
+}
+
+.bottom-line-text {
+  margin-top: 0;
+}
+
+.loading-popup-modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 114px;
+  height: 114px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.loading-popup-modal-img {
+  width: 39px;
+  height: 39px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.process-btn {
+  font-weight: 700;
+  width: 440px;
+  height: 114px;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  background-color: #87df9a;
+}
+
+.process-btn:hover {
+  background-color: #9a87df;
+  color: #ffffff;
+}
+
+.popup-copy-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 67%;
+  left: 87%;
+  width: 100px;
+  height: 36px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: #fcfcfc;
+  transition: transform 0.3 ease;
+}
+
+.popup-copy-btn:hover {
+  transform: scale(1.1);
+  background-color: #87df9a;
+}
+
+.copy-btn-clipboard-img {
+  width: 17px;
+  height: 22px;
+  margin-right: 0.2em;
+}
+
+.copy-btn-text {
+  margin-top: 1.2em;
+}
