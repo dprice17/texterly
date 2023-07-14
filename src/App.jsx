@@ -76,7 +76,7 @@ export default function App() {
       loadingModal: true,
     }));
     const url = "https://api.openai.com/v1/edits";
-    const APIKey = "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";
+    const APIKey = "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";
     const requestData = {
       model: "text-davinci-edit-001",
       input: `${textInputData.text}`,
@@ -109,7 +109,7 @@ export default function App() {
         ...prev,
         loadingModal: false,
       }));
-    }, [2000]);
+    }, 2000);
   };
 
   const handleCopyBtn = (event) => {
